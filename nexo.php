@@ -2,23 +2,25 @@
 
 include "PHP/clases.php";
 
-if (isset($_POST['lado1'])) 
+if (isset($_POST['cargar'])) 
 {
+	$fp = fopen("fichero.txt", "r");
 
-	$lado1 = $_POST['lado1'];
-	$lado2 = $_POST['lado2'];
 
-	if ($lado1 == ''|| $lado2 = '') 
+	//recorro el archivo
+	while (!FeoF($archivo)) 
 	{
-		echo "Error";
-	}
-	else
-	{
-
-		$rec = new Rectangulo(new Punto($lado1,$lado2),new Punto($lado2,$lado1));
-		$rec::Dibujar();
-
-	}
+		$mi_array=str_split($renglon);
+				//var_dump($mi_array);
+				$cont = 0;
+				foreach ($mi_array as $campo) 
+				{
+					$cont++;
+					if ($cont) {
+						# code...
+					}
+				}
+	}	
 }
 
 ?>
